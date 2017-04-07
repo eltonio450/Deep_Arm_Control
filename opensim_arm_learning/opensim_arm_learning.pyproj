@@ -25,6 +25,7 @@
   <ItemGroup>
     <Compile Include="CustomArmEnv.py" />
     <Compile Include="opensim_arm_learning_test.py" />
+    <Compile Include="visualization_solution.py" />
     <Compile Include="__init__.py" />
   </ItemGroup>
   <ItemGroup>

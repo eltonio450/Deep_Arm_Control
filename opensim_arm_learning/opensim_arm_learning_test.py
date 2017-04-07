@@ -1,11 +1,10 @@
+#%% Test
+print("Hello")
+
 #%% Importation
 from osim.env import ArmEnv
 from CustomArmEnv import CustomArmEnv
 import os
-
-
-#%% Specific Import
-# Derived from keras-rl
 import opensim as osim
 import numpy as np
 import sys
@@ -28,7 +27,7 @@ import argparse
 import math
 
 #%% Initialisation
-env = CustomArmEnv(visualize=False)
+env = CustomArmEnv(visualize=True)
 
 #%% First Observation
 observation = env.reset()
@@ -36,8 +35,8 @@ observation = env.reset()
 
 #%% Learning
 
-for i in range(5000):
-    observation, reward, done, info = env.step(env.action_space.sample())
+for i in range(100):
+    observation, reward, done, info = env.step([1,0,0,0,0,0])
 
 #%%
 
